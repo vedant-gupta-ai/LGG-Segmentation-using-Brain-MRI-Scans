@@ -1,4 +1,4 @@
-# Deep Learning based LGG-Segmentation using Brain MRI Scans
+# Deep Learning based LGG Segmentation using Brain MRI Scans
 
 Motivation: Low-grade gliomas (LGGs) are a diverse group of primary brain tumors that often arise in young, otherwise healthy patients and generally have an indolent course with longer-term survival in comparison with high-grade gliomas. Treatment options include observation, surgery, radiation, chemotherapy, or a combined approach, and management is individualized based on tumor location, histology, molecular profile, and patient characteristics. Moreover, in this type of brain tumor with a relatively good prognosis and prolonged survival, the potential benefits of treatment must be carefully weighed against potential treatment-related risks.
 Models for automated segmentation of Low Grade Gliomas in brain MRI scans
@@ -23,13 +23,7 @@ Inferences:
 3. The model can be easily deployed on radiology computers or hand-held tablets as the model takes about 350 MB of storage (.hdf5 format). It can be deployed easily using platforms like Docker or Vertex AI.
 4. From the given dataset of 3939 MR scans, the results were promising. Adding more images with different types of tumors could be a next logical step to build a more expansive models that works on cases beyond LGG.
 5. Experimentations Performed:
-  Adding batch normalization to vanilla UNet as it gave better performance
-  
-  Changing number of kernels in the UNet to check performance on lighter models
-  
-  Using decaying learning rate, which did not yield any better results than what fixed rates gave
-  
-  Data augmentation with only horizontal flips in order to maintain ethos of brain MRI
+  Adding batch normalization to vanilla UNet as it gave better performance. Changing number of kernels in the UNet to check performance on lighter models. Using decaying learning rate, which did not yield any better results than what fixed rates gave. Data augmentation with only horizontal flips in order to maintain ethos of brain MRI.
   
   References:
   1. Buda, Mateusz, Ashirbani Saha, and Maciej A. Mazurowski. "Association of genomic subtypes of lower-grade gliomas with shape features automatically extracted by a deep learning algorithm." Computers in biology and medicine 109 (2019): 218-225.
